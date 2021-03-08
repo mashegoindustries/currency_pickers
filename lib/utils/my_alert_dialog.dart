@@ -127,7 +127,7 @@ class MyAlertDialog<T> extends StatelessWidget {
         child: new Padding(
           padding: contentPadding,
           child: new DefaultTextStyle(
-            style: Theme.of(context).textTheme.subhead,
+            style: Theme.of(context).textTheme.subtitle1,
             child: content,
           ),
         ),
@@ -136,7 +136,7 @@ class MyAlertDialog<T> extends StatelessWidget {
 
     if (actions != null) {
       if (isDividerEnabled) children.add(divider);
-      children.add(new ButtonTheme.bar(
+      children.add(new ButtonBarTheme(
         child: new ButtonBar(
           children: actions,
         ),
